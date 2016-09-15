@@ -66,15 +66,38 @@
 /* CONTAIN */
 
 .lnRow {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    justify-content: space-around;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
 }
+
 .lnItem {
-/*     border: 1px solid black;
- */
+    position: relative;
+    border: 5px solid #111;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 260px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    max-height: 340px;
+    height: 100%;
+    margin: 12px
 }
+
 .lnItem img {
-    border: 2px solid #ccc;
-    max-width: 200px;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
+	width: 100%;
 }
+
+.lnHeaderLogo {}
