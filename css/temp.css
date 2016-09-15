@@ -120,7 +120,7 @@ body {
     color: #333
 }
 
-#lncontent,
+#page,
 footer {
     border-top: 1px solid #ccc
 }
@@ -1688,12 +1688,17 @@ a.media_more:hover {
 
 #flag li,
 #footer_links a,
+#h1_main_m,
+#h1_main_m h1 {
+    color: #fff
+}
+
 #flag,
 #mid_share_con {
     color: #222
 }
 
-#lncontent {
+#page {
     padding-bottom: 100px
 }
 
@@ -1750,16 +1755,16 @@ footer {
     margin: auto
 }
 
-#headertop {
+#h1_main_m {
     font-weight: 700;
-    width: 100%;
+    max-width: 700px;
     margin: auto;
-    padding: 20px;
-
-}
-#headertop,
-#headertop h1 {
-    color: #D34332;
+    padding: 7px;
+    border: 5px solid #444;
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #0d609b
 }
 
 #flag {
@@ -1954,7 +1959,7 @@ footer {
     footer {
         height: 183px
     }
-    #lncontent #contentright {
+    #page #contentright {
         width: 98%
     }
     #stats {
@@ -2103,7 +2108,7 @@ footer {
     footer {
         height: 160px
     }
-    #lncontent #contentright {
+    #page #contentright {
         width: 98%
     }
     #stats {
@@ -2401,7 +2406,7 @@ footer {
     }
 }
 
-#lnheader {
+#mast_header {
     position: relative;
     z-index: 999;
     display: -webkit-flex;
@@ -2491,7 +2496,7 @@ footer {
     text-align: left;
     border-right: 1px #ccc solid;
     background-color: #fff;
-    box-shadow: 0 0 15px 11px #999;
+    box-shadow: 0 0 15px 11px #999
 }
 
 #menu_cont a {
@@ -2499,17 +2504,17 @@ footer {
     width: 100%;
     height: 40px;
     text-decoration: none;
-    color: #222;
+    color: #222
 }
 
 #menu_cont a:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 #menu_cont li {
     min-height: 40px;
     padding-left: 22px;
-    border-bottom: 1px #ccc solid;
+    border-bottom: 1px #ccc solid
 }
 
 .ico a:before {
@@ -2568,32 +2573,32 @@ footer {
     display: inline-block;
     width: 44px;
     height: 13px;
-    background: url(http://torrentking.eu/media/grey_star.png);
+    background: url(/media/grey_star.png)
 }
 
 .stars>div {
     height: 13px;
-    background: url(http://torrentking.eu/media/gold_star.png);
+    background: url(/media/gold_star.png)
 }
 
 .low {
-    width: 15px;
+    width: 15px
 }
 
 .mid {
-    width: 30px;
+    width: 30px
 }
 
 .top {
-    width: 44px;
+    width: 44px
 }
 
 .m_rating:before {
-    content: "Rating ";
+    content: "Rating "
 }
 
 .m_quality:before {
-    content: "Quality";
+    content: "Quality"
 }
 
 #m_results {
@@ -2606,28 +2611,27 @@ footer {
     width: 250px;
     font-weight: 700;
     line-height: 28px;
-    background-color: #354c8c;
+    background-color: #354c8c
 }
 
 #mid_share {
-    margin-bottom: 3px;
+    margin-bottom: 3px
 }
 
 .movie h2 {
     height: 38px;
     overflow: auto;
     background-color: #000;
-    font-size: 14px;
+    font-size: 14px
 }
 
 .movie a {
     color: #FFF;
-    text-decoration: none;
-    
+    text-decoration: none
 }
 
 .m_head2 {
-    background-color: #000;
+    background-color: #000
 }
 
 .fresh {
@@ -2637,7 +2641,7 @@ footer {
     left: 0;
     background-position: -162px -64px;
     height: 26px;
-    width: 85px;
+    width: 85px
 }
 
 #logo,
@@ -2646,32 +2650,32 @@ footer {
 .fresh,
 .ic1 span {
     display: inline-block;
-    background-image: url(http://torrentking.eu/media/spfull.png);
-    background-repeat: no-repeat;
+    background-image: url(/media/spfull.png);
+    background-repeat: no-repeat
 }
 
 #tabs {
     overflow: hidden;
     padding-bottom: 18px;
-    margin: 25px 25px 0;
+    margin: 25px 25px 0
 }
 
 .m_slider {
     display: inline-block;
     margin-left: 15px;
     margin-right: 15px;
-    width: 300px;
+    width: 300px
 }
 
 .controls.options {
-    display: none;
+    display: none
 }
 
 .controls.options.m_left_float {
     float: left;
     margin-top: 15px;
     margin-left: 35px;
-    text-align: left;
+    text-align: left
 }
 
 .controls li {
@@ -2687,21 +2691,21 @@ footer {
     font-weight: 700;
     text-align: left;
     padding: 3px 10px;
-    border-radius: 4px;
+    border-radius: 4px
 }
 
 .controls li.active {
     background: #0089E4;
-    border: 1px solid #333;
+    border: 1px solid #333
 }
 
 .controls li.q_select {
-    background: #465F77;
+    background: #465F77
 }
 
 .cent_cont {
     width: 350px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .m_button {
@@ -2715,7 +2719,7 @@ footer {
     font-weight: 700;
     cursor: pointer;
     line-height: 25px;
-    background-color: #354c8c;
+    background-color: #354c8c
 }
 
 .m_button:hover {
@@ -2725,11 +2729,11 @@ footer {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: #fff;
+    color: #fff
 }
 
 .m_options {
-    line-height: 170%;
+    line-height: 170%
 }
 
 .m_grid {
@@ -2762,7 +2766,7 @@ footer {
     height: 100%;
     width: 100%;
     margin-top: 7px;
-    margin-bottom: 15px;
+    margin-bottom: 15px
 }
 
 .movie {
@@ -2777,25 +2781,24 @@ footer {
     overflow: hidden;
     max-height: 340px;
     height: 100%;
-    margin: 12px;
-    background-color: #111;
+    margin: 12px
 }
 
 .movie:hover {
     -webkit-box-shadow: 0 0 12px rgba(0, 0, 255, 1);
     -moz-box-shadow: 0 0 12px rgba(0, 0, 255, 1);
-    box-shadow: 0 0 12px rgba(0, 0, 255, 1);
+    box-shadow: 0 0 12px rgba(0, 0, 255, 1)
 }
 
 .m_head2 {
     color: #2f92f8;
-    height: 18px;
+    height: 18px
 }
 
 .pagination {
     display: inline-block;
     line-height: 18px;
-    padding-bottom: 20px;
+    padding-bottom: 20px
 }
 
 .pagination a,
@@ -2808,30 +2811,30 @@ footer {
     color: #07d;
     margin: 2px;
     padding: 2px 8px;
-    background-color: #ddd;
+    background-color: #ddd
 }
 
 .pagination .dots {
     color: #606060;
     border: none;
-    background-color: #fff;
+    background-color: #fff
 }
 
 .pagination a:hover,
 .pagination .passive {
-    color: #303030;
+    color: #303030
 }
 
 .pagination a.active.current {
     color: #fff;
-    background-color: #2B76C7;
+    background-color: #2B76C7
 }
 
 .m_input {
     border: 1px;
     color: #f6931f;
     font-weight: 700;
-    width: 50px;
+    width: 50px
 }
 
 .options_info {
@@ -2840,7 +2843,7 @@ footer {
     line-height: 10px;
     color: #474747;
     font-size: 20px;
-    padding: 10px;
+    padding: 10px
 }
 
 .m_options_control {
@@ -2849,11 +2852,11 @@ footer {
     margin-top: 3px!important;
     border: 1px #888 solid!important;
     height: 18px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .m_options_control:hover {
-    cursor: pointer;
+    cursor: pointer
 }
 
 .minus {
@@ -2862,10 +2865,11 @@ footer {
 
 .imgpart {
     line-height: 0;
+    overflow: hidden
 }
 
 .imgpart img {
-    width: 100%;
+    width: 100%
 }
 
 .pages {
@@ -2876,37 +2880,37 @@ footer {
 }
 
 .p_left {
-    text-align: left;
+    text-align: left
 }
 
 .p_center {
-    text-align: center;
+    text-align: center
 }
 
 a {
-    color: #45739E;
+    color: #45739E
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: none
 }
 
 form {
     display: flex;
-    font-size: 0px;
+    font-size: 0px
 }
 
 input {
-    padding: 18px;
+    padding: 18px
 }
 
 #main_search {
     width: 200px;
-    border: 2px solid #79B;
+    border: 2px solid #79B
 }
 
 #main_search:hover {
-    border: 2px solid #79F;
+    border: 2px solid #79F
 }
 
 .button {
@@ -2922,20 +2926,20 @@ input {
     #logo {
         background-position: -0px -64px;
         height: 41px;
-        width: 45px;
+        width: 45px
     }
     @media (min-width:300px)and (max-width:450px) {
         #main_search {
-            width: 120px;
+            width: 120px
         }
         #search {
-            margin: auto auto auto auto;
+            margin: auto auto auto auto
         }
         input {
-            padding: 18px;
+            padding: 18px
         }
         #hamb_cont {
-            padding-right: 10px;
+            padding-right: 10px
         }
         .cus_ann_sp a {
             white-space: pre;
