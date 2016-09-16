@@ -57,21 +57,33 @@ body {
 .page-heading h1 {
     margin-top: 0;
     color: white;
-    padding: 60px 0 0 0;
+    padding: 80px 0 0 0;
     font-size: 40px;
 }
 
 .page-heading p {
     margin-bottom: 0;
     line-height: 1.4;
-    padding: 0 0 40px 0px;
+    padding: 0 0 60px 0px;
     color: #CCCCB1;
 }
 
 .page-heading .container {
     position: relative;
 }
-
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(29,29,29,0.65) 0,rgba(29,29,29,1) 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(29,29,29,0.5)),color-stop(100%,rgba(29,29,29,1)));
+    background: -webkit-linear-gradient(top,rgba(29,29,29,0.65) 0,rgba(29,29,29,1) 100%);
+    background: -o-linear-gradient(top,rgba(29,29,29,0.65) 0,rgba(29,29,29,1) 100%);
+    background: -ms-linear-gradient(top,rgba(29,29,29,0.65) 0,rgba(29,29,29,1) 100%);
+    background: -moz-linear-gradient(top,rgba(29,29,29,0.65) 0,rgba(29,29,29,1) 100%);
+}
 
 /* CONTAIN */
 .lnRow {
@@ -97,17 +109,28 @@ body {
     max-height: 400px;
     height: 100%;
     margin: 12px;
-    display: block;
+    display: block;    
 }
 
-.lnItemInside {    
-    border: 5px solid #F0F0F0;
+.lnItemInside {   
+    width: 220px;
+    margin: 0 auto;
+    border: 1px solid rgba(240, 240, 240, .5);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 3px;
-    max-height: 300px;
     overflow: hidden;
     margin: 0 auto;
     display: block;
     position: relative;
+    height: 400px;
+}
+
+.lnItemInsideImg {
+    width: 100%;
+    overflow: hidden;
+    max-height: 280px;
+    border-bottom: 1px solid rgba(240, 240, 240, .5); 
 }
 
 .lnItem h4 {
@@ -131,7 +154,7 @@ body {
     position: absolute;
     display: block;
     top: 300px;
-    left: 50px;
+    left: 40px;
     width: 140px;
     border: 1px solid white;
     padding: 15px 0;
@@ -160,12 +183,37 @@ body {
     font-weight: bold;
     padding: 3px 5px;    
 }
+.lnItemInsideName {
+    height: 60px;
+    overflow: hidden;
+    border-bottom: 1px solid grey;
+}
+.lnItemInsideName h4 {
+    
+}
+.lnItemInsideInfo {
+    
+}
+.lnItemInsideInfoRate {
+    float: left;
+    width: 49%;
+    border-right: 1px solid #CCCCB1; 
+}
+.lnItemInsideInfoQuality {
+    float: left;
+    width: 49%;
+}
 .lnXemchitiet:hover {
     text-decoration: none;
 }
+.lnItemInsideInfo p {
+    color: white;
+    font-weight: 700;
+    margin: 5px 0 10px;
+}
 .tags {
     position: absolute;
-    top: 250px;
+    top: 240px;
     padding-left: 10px;
 }
 .tags a {
@@ -182,7 +230,7 @@ body {
 /* FOOTER */
 footer {
     border-top: 1px solid #f1f1f1;    
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 footer a {
     color: white;
