@@ -93,10 +93,10 @@ body {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    justify-content: space-around;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    justify-content: center;
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -ms-flex-pack: center;
@@ -104,16 +104,17 @@ body {
 
 .lnItem {
     font-size: 14px;
-    width: 240px;
+    width: 200px;
     overflow: hidden;
     max-height: 400px;
     height: 100%;
     margin: 12px;
     display: block;    
+    align-self: center;
 }
 
 .lnItemInside {   
-    width: 240px;
+    width: 200px;
     margin: 0 auto;
     border: 1px solid rgba(240, 240, 240, .5);
     -webkit-background-clip: padding-box; /* for Safari */
