@@ -345,3 +345,130 @@ footer h4 {
     max-width: 500px;
     margin: auto;
 }
+#lnDetailMovieFooter a {
+    margin: 0;    
+    border: none;
+}
+#lnDetailMovieFooter {
+    text-align: center;
+    padding-bottom: 40px;
+}
+#lnDetailMovieFooter h2 {
+    color: white;
+}
+#lnDetailMovieFooter table {
+    width: 100%;
+}
+#lnDetailMovieFooter table caption {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#lnDetailMovieFooter table th {
+    text-align: center;
+    color: white;
+}
+#lnDetailMovieFooter table tr {
+    border: 1px solid grey;
+}
+#lnDetailMovieFooter table td {
+    color: white;
+    padding: 3px;
+}
+.lnDetailMovieFooterButton {
+    background-color: #007ED8;
+    color: white;
+    padding: 3px 5px;
+    margin: 3px;
+    border-radius: 2px;
+}
+.lnDetailMovieFooterUl {
+    margin-top: 40px;
+    text-align: left;
+    list-style: none;
+}
+.lnDetailMovieFooterUl li {
+    width: 230px;
+    float: left;
+    color: white;
+}
+.lnDetailMovieFooterUl li a {
+    display: block;
+    border: none;
+    color: white;
+}
+.lnDetailMovieFooterUl > li > a {
+    border: none;
+}
+.lnDetailMovieFooterLi a {
+    border: none;
+    border-style: none;
+}
+#rightImg img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#mid_share_con a {
+    color: #fff;
+}
+#mid_share a {
+    margin-left: .2em;
+}
+.at-style-responsive .at-share-btn {
+    padding: 5px;
+}
+.at-resp-share-element .at-share-btn {
+    display: inline-block;
+    margin: 0 2px 5px;
+    overflow: hidden;
+    line-height: 0;
+    text-transform: none;
+    transition: all .2s ease-in-out;
+    border: 0;
+}
+.at4-visually-hidden {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+.at-resp-share-element .at-share-btn .at-icon-wrapper {
+    float: left;
+}
+.at-icon-wrapper {
+    display: inline-block;
+    overflow: hidden;
+}
+.at4-jumboshare .at-share-btn {
+    display: inline-block;
+    margin: 0 2px;
+    line-height: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+    background-color: transparent;
+}
+.at4-jumboshare .at-share-btn .at-icon {
+    float: left;
+}
+.at-icon {
+    fill: #fff;
+    border: 0;
+}
+.at-resp-share-element .at-share-btn .at-label {
+    padding: 0 15px 0 0;
+    margin: 0 0 0 5px;
+    background: none;
+    color: white;
+}
+.at-label {
+    color: white;
+}
+.social {
+    margin-top: 5px;
+}
