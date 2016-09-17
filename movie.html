@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/torrentking.css">	
+	<link rel="stylesheet" type="text/css" href="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css">	
+	<script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>	
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js" type="text/javascript"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js" type="text/javascript"></script>	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/css/bootstrap-slider.min.css">	
+	<script src="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- MENU -->
+<nav class="navbar navbar-inverse" id="lnNav"> 
+  	<div class="container">
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" id="logo" href="#">TORRENT SITE</a>
+    	</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+     		<ul class="nav navbar-nav">
+       			<li class=""><a href="#">Home</a></li>
+		        <li class="dropdown">
+		          	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Movies <span class="caret"></span></a>
+		          	<ul class="dropdown-menu">
+			            <li><a href="#">Movies 1</a></li>
+			            <li><a href="#">Movies 2</a></li>
+			            <li><a href="#">Movies 3</a></li>
+		          	</ul>
+		        </li>
+      		</ul>
+    	</div>
+  	</div>
+</nav> 
+<!--END MENU -->
+<div class="container-fluid page-heading">
+	<div class="header-overlay"></div>
+	<div class="row movie">
+		<div class="col-md-10 col-md-offset-1">
+		    <h2 style="color: white;">MOVIES</h2>
+		    <ul class="nav nav-tabs">
+		        <li class="active"><a href="#home">OPTIONS</a></li>
+		        <li><a href="#menu1">SORT BY</a></li>
+		        <li><a href="#menu2">GENRE</a></li>
+		        <li><a href="#menu3">ACTORS*</a></li>
+		        <li><a href="#menu4">DIRECTORS*</a></li>
+		    </ul>
+		    <div class="tab-content">
+		    	<!-- SENDCOND-TAB: OPTIONS -->
+				<div id="home" class="tab-pane fade in active">
+				    <div id="exTab1" class="">
+				        <ul class="nav nav-pills margintop10px">
+				            <li class="active">
+				                <a href="#h1" data-toggle="tab">Released</a>
+				            </li>
+				            <li>
+				            	<a href="#h2" data-toggle="tab">Quality</a>
+				            </li>
+				            <li>
+				            	<a href="#h3" data-toggle="tab">Rating</a>
+				            </li>
+				            <li>
+				            	<a href="#h4" data-toggle="tab">Votes</a>
+				            </li>
+				            <li>
+				                <a href="#h5" data-toggle="tab">3D</a>
+				            </li>
+				            <li>
+				            	<a href="#h6" data-toggle="tab">Mpaa</a>
+				            </li>
+				            <li>
+				            	<a href="#h7" data-toggle="tab">Letter</a>
+				            </li>
+				            <li>
+				            	<a href="#h8" data-toggle="tab">Duration</a>
+				            </li>				            
+				        </ul>
+				        <div class="inside tab-content clearfix margintop10px">
+				            <div class="tab-pane active" id="h1">
+				                <div class="row">
+				                	<div class="col-md-1" style="color:white;">
+				                		FROM
+				                	</div>
+								    <div class='col-md-3'>
+								        <div class="form-group">
+								            <div class='input-group date' id='datetimepicker6'>
+								                <input type='text' class="form-control" />
+								                <span class="input-group-addon">
+								                    <span class="glyphicon glyphicon-calendar"></span>
+								                </span>
+								            </div>
+								        </div>
+								    </div>
+				                	<div class="col-md-1" style="color:white;">
+				                		TO
+				                	</div>
+								    <div class='col-md-3'>
+								        <div class="form-group">
+								            <div class='input-group date' id='datetimepicker7'>
+								                <input type='text' class="form-control" />
+								                <span class="input-group-addon">
+								                    <span class="glyphicon glyphicon-calendar"></span>
+								                </span>
+								            </div>
+								        </div>
+								    </div>
+				                </div>
+				            </div>
+				            <div class="tab-pane" id="h2">
+							    <div id="exTab1" class="">
+							        <ul class="nav nav-pills margintop10px">
+							            <li class="active">
+							                <a href="#quality1" data-toggle="tab">Quality all</a>
+							            </li>
+							            <li>
+							            	<a href="#quality2" data-toggle="tab">Quality unknown</a>
+							            </li>
+							            <li>
+							            	<a href="#quality3" data-toggle="tab">Quality Low</a>
+							            </li>
+							            <li>
+							            	<a href="#quality4" data-toggle="tab">Quality Medium</a>
+							            </li>
+							            <li>
+							                <a href="#quality5" data-toggle="tab">Quality Top</a>
+							            </li>
+								    </ul>
+							    </div>
+				            </div>
+				            <!-- RATING -->
+				            <div class="tab-pane" id="h3">
+				            	<span style="color: white;padding-right: 20px;">0</span>
+								<input id="ex6" type="text" data-slider-min="0" data-slider-max="9.5" data-slider-step="0.1" data-slider-value="3"/>
+								<span style="color: white;padding-left: 20px;">9.5</span>
+							</div>
+							<!-- END RATING -->
+				            <div class="tab-pane" id="h4">
+				            	<span style="color: white;padding-right: 20px;">0</span>
+								<input id="ex7" type="text" data-slider-min="0" data-slider-max="100000" data-slider-step="100" data-slider-value="3"/>
+								<span style="color: white;padding-left: 20px;">100.000</span>
+				            </div>
+				            <!-- OPTIONS: 3D -->
+				            <div class="tab-pane" id="h5">
+							    <div id="3D" class="">
+							        <ul class="nav nav-pills margintop10px">
+							            <li class="active">
+							                <a href="#3D0" data-toggle="tab">All</a>
+							            </li>
+							            <li>
+							            	<a href="#3D1" data-toggle="tab">3D</a>
+							            </li>
+							        </ul>
+							    </div>
+				            </div>
+				            <!-- END OPTIONS: 3D -->
+				            <!-- OPTIONS: MPAA -->
+				            <div class="tab-pane" id="h6">
+								<div class="row margintop10px">
+									<div class="col-md-2" style="color: white;">Film Rating</div>
+									<div class="col-md-4">
+										<select class="form-control">
+										    <option>All</option>
+										    <option>(G) - General Audiences</option>
+										    <option>(PG) - Parental Guidance Suggested</option>
+										    <option>(PG-13) - Parents Strongly Cautioned</option>
+										    <option>(R) - Restricted</option>
+										    <option>(NC-17) - No One Under 17</option>
+										    <option>(X) - Adults Only</option>
+										</select>
+									</div>
+									<div class="col-md-1" style="color: white;">Option</div>
+									<div class="col-md-3">
+										<select class="form-control">
+										    <option>From this</option>
+										    <option>Till this</option>
+										    <option>Equal this</option>
+										</select>
+									</div>
+								</div>
+				            </div>
+				            <!-- END OPTIONS: MPAA -->
+				            <!-- OTIONS: LETTERS -->
+				            <div class="tab-pane" id="h7">
+							    <div id="exTab3" class="">
+							        <ul class="nav nav-pills margintop10px">
+							            <li class="active">
+							                <a href="#d1" data-toggle="tab">A</a>
+							            </li>
+							            <li>
+							            	<a href="#d2" data-toggle="tab">B</a>
+							            </li>
+							            <li>
+							            	<a href="#d3" data-toggle="tab">C</a>
+							            </li>
+							            <li>
+							            	<a href="#d4" data-toggle="tab">D</a>
+							            </li>
+							            <li>
+							                <a href="#d5" data-toggle="tab">E</a>
+							            </li>
+							            <li>
+							            	<a href="#d6" data-toggle="tab">F</a>
+							            </li>
+							            <li>
+							            	<a href="#d7" data-toggle="tab">G</a>
+							            </li>
+							            <li>
+							            	<a href="#d8" data-toggle="tab">H</a>
+							            </li>
+							            <li>
+							            	<a href="#d9" data-toggle="tab">I</a>
+							            </li>
+							            <li>
+							                <a href="#d10" data-toggle="tab">J</a>
+							            </li>
+							            <li>
+							            	<a href="#d11" data-toggle="tab">K</a>
+							            </li>	
+							            <li>
+							            	<a href="#d12" data-toggle="tab">L</a>
+							            </li>
+							            <li>
+							            	<a href="#d13" data-toggle="tab">M</a>
+							            </li>
+							            <li>
+							            	<a href="#d14" data-toggle="tab">N</a>
+							            </li>
+							            <li>
+							                <a href="#d15" data-toggle="tab">O</a>
+							            </li>
+							            <li>
+							            	<a href="#d16" data-toggle="tab">P</a>
+							            </li>
+							            <li>
+							            	<a href="#d17" data-toggle="tab">Q</a>
+							            </li>
+							            <li>
+							            	<a href="#d18" data-toggle="tab">R</a>
+							            </li>
+							            <li>
+							            	<a href="#d19" data-toggle="tab">S</a>
+							            </li>
+							            <li>
+							                <a href="#d20" data-toggle="tab">T</a>
+							            </li>
+							            <li>
+							            	<a href="#d6" data-toggle="tab">U</a>
+							            </li>		
+							            <li>
+							            	<a href="#d4" data-toggle="tab">V</a>
+							            </li>
+							            <li>
+							                <a href="#d5" data-toggle="tab">W</a>
+							            </li>
+							            <li>
+							            	<a href="#d6" data-toggle="tab">X</a>
+							            </li>
+							            <li>
+							            	<a href="#d2" data-toggle="tab">Y</a>
+							            </li>
+							            <li>
+							            	<a href="#d3" data-toggle="tab">Z</a>
+							            </li>
+							            <li>
+							            	<a href="#d4" data-toggle="tab">09</a>
+							            </li>				        
+							        </ul>				        
+							    </div>
+				            </div>
+							<!-- END OTIONS: LETTERS -->
+							<!-- OPTIONS: DURATIONS -->
+				            <div class="tab-pane" id="h8">
+				            	<span style="color: white;padding-right: 20px;">0</span>
+								<input id="ex8" type="text" data-slider-min="0" data-slider-max="400" data-slider-step="1" data-slider-value="3"/>
+								<span style="color: white;padding-left: 20px;">400</span>
+				            </div>
+				            <!-- END DURATIONS -->
+				        </div>
+				    </div>
+				</div>
+		        <!-- END OPTIONS -->
+		        <!-- SECOND-TAB: SORT BY -->
+		        <div id="menu1" class="tab-pane fade">
+				    <div id="exTab1" class="">
+				        <ul class="nav nav-pills margintop10px">
+				            <li class="active">
+				                <a href="#b1" data-toggle="tab">Release date</a>
+				            </li>
+				            <li>
+				            	<a href="#b2" data-toggle="tab">Alphabetically</a>
+				            </li>
+				            <li>
+				            	<a href="#b3" data-toggle="tab">Rating</a>
+				            </li>
+				            <li>
+				            	<a href="#b4" data-toggle="tab">Votes</a>
+				            </li>
+				            <li>
+				                <a href="#b5" data-toggle="tab">Duration</a>
+				            </li>
+				            <li>
+				            	<a href="#b6" data-toggle="tab">Mpaa</a>
+				            </li>
+				        </ul>				        
+				    </div>
+		        </div>
+		        <!-- SECOND-TAB: END SHORTBY -->
+		        <div id="menu2" class="tab-pane fade">
+				    <div id="exTab1" class="">
+				        <ul class="nav nav-pills margintop10px">
+				            <li class="active">
+				                <a href="#c1" data-toggle="tab">Adventure</a>
+				            </li>
+				            <li>
+				            	<a href="#c2" data-toggle="tab">Action</a>
+				            </li>
+				            <li>
+				            	<a href="#c3" data-toggle="tab">Animation</a>
+				            </li>
+				            <li>
+				            	<a href="#c4" data-toggle="tab">Biography</a>
+				            </li>
+				            <li>
+				                <a href="#c5" data-toggle="tab">Comedy</a>
+				            </li>
+				            <li>
+				            	<a href="#c6" data-toggle="tab">Crime</a>
+				            </li>
+				            <li>
+				            	<a href="#c2" data-toggle="tab">Documentary</a>
+				            </li>
+				            <li>
+				            	<a href="#c3" data-toggle="tab">Drama</a>
+				            </li>
+				            <li>
+				            	<a href="#c4" data-toggle="tab">Family</a>
+				            </li>
+				            <li>
+				                <a href="#c5" data-toggle="tab">Fantasy</a>
+				            </li>
+				            <li>
+				            	<a href="#c6" data-toggle="tab">Film-noir</a>
+				            </li>	
+				            <li>
+				            	<a href="#c2" data-toggle="tab">Game-show</a>
+				            </li>
+				            <li>
+				            	<a href="#c3" data-toggle="tab">History</a>
+				            </li>
+				            <li>
+				            	<a href="#c4" data-toggle="tab">Horror</a>
+				            </li>
+				            <li>
+				                <a href="#c5" data-toggle="tab">Music</a>
+				            </li>
+				            <li>
+				            	<a href="#c6" data-toggle="tab">Musical</a>
+				            </li>
+				            <li>
+				            	<a href="#c2" data-toggle="tab">Mystery</a>
+				            </li>
+				            <li>
+				            	<a href="#c3" data-toggle="tab">News</a>
+				            </li>
+				            <li>
+				            	<a href="#c4" data-toggle="tab">Reality-tv</a>
+				            </li>
+				            <li>
+				                <a href="#c5" data-toggle="tab">Romance</a>
+				            </li>
+				            <li>
+				            	<a href="#c6" data-toggle="tab">Sci-fi</a>
+				            </li>		
+				            <li>
+				            	<a href="#c4" data-toggle="tab">Short</a>
+				            </li>
+				            <li>
+				                <a href="#c5" data-toggle="tab">Sport</a>
+				            </li>
+				            <li>
+				            	<a href="#c6" data-toggle="tab">Talk-show</a>
+				            </li>
+				            <li>
+				            	<a href="#c2" data-toggle="tab">Thriller</a>
+				            </li>
+				            <li>
+				            	<a href="#c3" data-toggle="tab">War</a>
+				            </li>
+				            <li>
+				            	<a href="#c4" data-toggle="tab">Western</a>
+				            </li>
+				        </ul>				        
+				    </div>
+		        </div>
+		        <div id="menu3" class="tab-pane fade">
+				    <div id="exTab3" class="">
+				        <ul class="nav nav-pills margintop10px">
+				            <li class="active">
+				                <a href="#d1" data-toggle="tab">A</a>
+				            </li>
+				            <li>
+				            	<a href="#d2" data-toggle="tab">B</a>
+				            </li>
+				            <li>
+				            	<a href="#d3" data-toggle="tab">C</a>
+				            </li>
+				            <li>
+				            	<a href="#d4" data-toggle="tab">D</a>
+				            </li>
+				            <li>
+				                <a href="#d5" data-toggle="tab">E</a>
+				            </li>
+				            <li>
+				            	<a href="#d6" data-toggle="tab">F</a>
+				            </li>
+				            <li>
+				            	<a href="#d7" data-toggle="tab">G</a>
+				            </li>
+				            <li>
+				            	<a href="#d8" data-toggle="tab">H</a>
+				            </li>
+				            <li>
+				            	<a href="#d9" data-toggle="tab">I</a>
+				            </li>
+				            <li>
+				                <a href="#d10" data-toggle="tab">J</a>
+				            </li>
+				            <li>
+				            	<a href="#d11" data-toggle="tab">K</a>
+				            </li>	
+				            <li>
+				            	<a href="#d12" data-toggle="tab">L</a>
+				            </li>
+				            <li>
+				            	<a href="#d13" data-toggle="tab">M</a>
+				            </li>
+				            <li>
+				            	<a href="#d14" data-toggle="tab">N</a>
+				            </li>
+				            <li>
+				                <a href="#d15" data-toggle="tab">O</a>
+				            </li>
+				            <li>
+				            	<a href="#d16" data-toggle="tab">P</a>
+				            </li>
+				            <li>
+				            	<a href="#d17" data-toggle="tab">Q</a>
+				            </li>
+				            <li>
+				            	<a href="#d18" data-toggle="tab">R</a>
+				            </li>
+				            <li>
+				            	<a href="#d19" data-toggle="tab">S</a>
+				            </li>
+				            <li>
+				                <a href="#d20" data-toggle="tab">T</a>
+				            </li>
+				            <li>
+				            	<a href="#d6" data-toggle="tab">U</a>
+				            </li>		
+				            <li>
+				            	<a href="#d4" data-toggle="tab">V</a>
+				            </li>
+				            <li>
+				                <a href="#d5" data-toggle="tab">W</a>
+				            </li>
+				            <li>
+				            	<a href="#d6" data-toggle="tab">X</a>
+				            </li>
+				            <li>
+				            	<a href="#d2" data-toggle="tab">Y</a>
+				            </li>
+				            <li>
+				            	<a href="#d3" data-toggle="tab">Z</a>
+				            </li>
+				            <li>
+				            	<a href="#d4" data-toggle="tab">09</a>
+				            </li>				        
+				        </ul>				        
+				    </div>
+		        </div>
+		        <div id="menu4" class="tab-pane fade">
+				    <div id="exTab3" class="">
+				        <ul class="nav nav-pills margintop10px">
+				            <li class="active">
+				                <a href="#d1" data-toggle="tab">A</a>
+				            </li>
+				            <li>
+				            	<a href="#d2" data-toggle="tab">B</a>
+				            </li>
+				            <li>
+				            	<a href="#d3" data-toggle="tab">C</a>
+				            </li>
+				            <li>
+				            	<a href="#d4" data-toggle="tab">D</a>
+				            </li>
+				            <li>
+				                <a href="#d5" data-toggle="tab">E</a>
+				            </li>
+				            <li>
+				            	<a href="#d6" data-toggle="tab">F</a>
+				            </li>
+				            <li>
+				            	<a href="#d7" data-toggle="tab">G</a>
+				            </li>
+				            <li>
+				            	<a href="#d8" data-toggle="tab">H</a>
+				            </li>
+				            <li>
+				            	<a href="#d9" data-toggle="tab">I</a>
+				            </li>
+				            <li>
+				                <a href="#d10" data-toggle="tab">J</a>
+				            </li>
+				            <li>
+				            	<a href="#d11" data-toggle="tab">K</a>
+				            </li>	
+				            <li>
+				            	<a href="#d12" data-toggle="tab">L</a>
+				            </li>
+				            <li>
+				            	<a href="#d13" data-toggle="tab">M</a>
+				            </li>
+				            <li>
+				            	<a href="#d14" data-toggle="tab">N</a>
+				            </li>
+				            <li>
+				                <a href="#d15" data-toggle="tab">O</a>
+				            </li>
+				            <li>
+				            	<a href="#d16" data-toggle="tab">P</a>
+				            </li>
+				            <li>
+				            	<a href="#d17" data-toggle="tab">Q</a>
+				            </li>
+				            <li>
+				            	<a href="#d18" data-toggle="tab">R</a>
+				            </li>
+				            <li>
+				            	<a href="#d19" data-toggle="tab">S</a>
+				            </li>
+				            <li>
+				                <a href="#d20" data-toggle="tab">T</a>
+				            </li>
+				            <li>
+				            	<a href="#d6" data-toggle="tab">U</a>
+				            </li>		
+				            <li>
+				            	<a href="#d4" data-toggle="tab">V</a>
+				            </li>
+				            <li>
+				                <a href="#d5" data-toggle="tab">W</a>
+				            </li>
+				            <li>
+				            	<a href="#d6" data-toggle="tab">X</a>
+				            </li>
+				            <li>
+				            	<a href="#d2" data-toggle="tab">Y</a>
+				            </li>
+				            <li>
+				            	<a href="#d3" data-toggle="tab">Z</a>
+				            </li>
+				            <li>
+				            	<a href="#d4" data-toggle="tab">09</a>
+				            </li>				        
+				        </ul>				        
+				    </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	<div class="row text-center margintop10px">
+		<div class="col-md-12">
+			<a class="lnXemchitietVisible" href="" title="">CONFIRM</a>
+			<a class="lnXemchitietVisible" href="" title="">RESET</a>			
+		</div>
+	</div>
+	<div class="row margintop10px">
+		<div class="col-md-10 col-md-offset-1 text-left">
+			<h4 style="color: white;">62887 movies found</h4>
+			<hr>			
+		</div>
+	</div>
+</div>	
+<!--HEADER-->
+<!--END HEADER-->
+<div class="container">
+	<div class="row">
+		<div class="con-xs-12 col-sm-12 col-md-12">
+			<div class="lnRow">
+				<div class="lnItem">
+					<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="lnItem">
+					<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>								
+				</div>
+				<div class="lnItem">
+					<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>		</div>
+				<div class="lnItem">
+					<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="lnItem">
+					<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="lnItem">
+					<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="lnItem">
+								<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>			
+				</div>
+				<div class="lnItem">
+								<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>			
+				</div>
+				<div class="lnItem">
+								<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>			
+				</div>
+				<div class="lnItem">
+								<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>			
+				</div>
+				<div class="lnItem">
+								<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>			
+				</div>
+				<div class="lnItem">
+								<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>			
+				</div>
+				<div class="lnItem">
+								<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>			
+				</div>
+				<div class="lnItem">
+					<div class="lnItemInside text-center">
+						<div class="lnItemInsideImg">
+							<img src="https://yts.ag/assets/images/movies/teenage_mutant_ninja_turtles_out_of_the_shadows_2016/medium-cover.jpg" alt="">
+						</div>
+						<div class="lnItemInsideTop">
+							#TOP
+						</div>
+						<a class="lnXemchitiet" href="" title="">DETAIL</a>
+						<div class="tags">
+							<a href="" title="">3D</a>
+							<a href="" title="">720p</a>
+							<a href="" title="">1080p</a>
+						</div>
+						<div class="lnItemInsideName">
+							<h4><a href="" title="">Guardians of the Galaxy - 2014</a></h4>					
+						</div>
+						<div class="lnItemInsideInfo">
+							<div class="lnItemInsideInfoRate">
+								<p>RATE</p>	
+								<p>8.5</p>
+							</div>							
+							<div class="lnItemInsideInfoQuality">
+								<p>QUALITY</p>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>
+								<span class="glyphicon glyphicon-star" style="color: yellow;"></span>			
+								<span class="glyphicon glyphicon-star" style="color: grey;"></span>
+							</div>
+						</div>	
+					</div>						
+				</div>						
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+	</div>
+</div>
+<!-- END CONTAIN -->
+
+<!-- FOOTER -->
+<footer>
+	<div class="container">
+		<div class="row" style="padding: 20px 0;">
+			<div class="col-md-12 text-center">
+				<h4>Free new movie torrent downloads</h4>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<a id="logo" href="#">TORRENT SITE</a>
+			</div>
+			<div class="col-md-6">
+				<a href="" title="">About Us</a>
+				<a href="" title="">Contact us</a>
+				<a href="" title="">Terms</a>
+			</div>
+			<div class="col-md-2"></div>
+		</div>		
+	</div>
+</footer>
+<!-- END FOOTER -->
+<script type="text/javascript">
+$("#ex6").slider();
+$("#ex6").on("slide", function(slideEvt) {
+	$("#ex6SliderVal").text(slideEvt.value);
+});
+$("#ex7").slider();
+$("#ex7").on("slide", function(slideEvt) {
+	$("#ex7SliderVal").text(slideEvt.value);
+});
+$("#ex8").slider();
+$("#ex8").on("slide", function(slideEvt) {
+	$("#ex8SliderVal").text(slideEvt.value);
+});
+
+$(function () {
+    $('#datetimepicker6').datetimepicker();
+    $('#datetimepicker7').datetimepicker({
+        useCurrent: false //Important! See issue #1075
+    });
+    $("#datetimepicker6").on("dp.change", function (e) {
+        $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+    });
+    $("#datetimepicker7").on("dp.change", function (e) {
+        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+    });
+});
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>

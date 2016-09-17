@@ -242,3 +242,106 @@ footer a {
 footer h4 {
     color: white;
 }
+.margintop10px {
+    margin-top: 10px;
+}
+.tab-content ul > li > a {
+    border: 1px solid #337ab7; 
+    padding: 3px 15px;    
+    margin: 3px 3px;   
+}
+.inside {
+    margin-top: 10px;
+}
+/* FOR RATING MOVIE */
+#ex1Slider .slider-selection {
+    background: #BABABA;
+}
+/* FOR MOVIE */
+.lnXemchitietVisible {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #fafafa;
+}
+.lnXemchitietVisible:hover {
+    text-decoration: none;
+    color: white;
+}
+/* MOVIE DETAILS */
+.colorwhite {
+    color: white;
+}
+.fbold {
+    font-weight: bold;
+}
+.bordergrey {
+    border: 1px solid #fafafa;
+}
+#shareCounts {
+    font-size: 60px;
+    color: #E74339;
+}
+.paddingbottom50px {
+    padding-bottom: 50px;
+}
+
+/* FOR MOVIE DETAILS */
+.leftInfo {
+    margin-top: 20px;
+    margin: auto;    
+    border: 2px solid #F0F0F0;
+    text-align: center;
+    width: 300px;
+}
+
+.leftInfo img {
+    width: 100%;
+}
+
+.leftInfo h1 {
+    color: white;
+}
+
+.leftInfo table {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.leftInfo table td {
+    border: 2px solid #ccc;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.rightInfo {
+    max-width: 500px;
+    margin: auto;
+}
+
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+    color: white;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #1D1D1D;
+}
+.bold {
+    font-weight: 700;
+}
+.detailsMVButton {
+    border-radius: 5px;
+    background-color: #8EDCF8;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin-top: 50px;
+    border: 1px solid #eee;
+    max-width: 500px;
+    margin: auto;
+}
