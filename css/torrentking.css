@@ -472,3 +472,9 @@ footer h4 {
 .social {
     margin-top: 5px;
 }
+
+/*  */
+.actorLetter a {
+    border: 1px solid #337AB7;
+    margin: 3px;
+}
