@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+	<title>The Golden State Record</title>
+	<style type="text/css" media="screen">
+		@font-face { font-family: FjallaOne; src: url('FjallaOne-Regular.otf'); } 
+		h1, p, div {
+			font-family: FjallaOne;
+		}
+		body {
+			background: #111111;
+			margin: 0;
+		}
+		#banner {
+			width: 100%;
+			height: 50px;
+			background: white;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			position: relative;
+		}
+		#ribbon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.main-container {			
+		    display: -webkit-flex;
+		    display: flex;
+		    flex-direction: row;
+		    -webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		    -webkit-align-content: center;
+		    -ms-flex-line-pack: center;
+		    align-content: center;
+		    justify-content: center;
+		    -webkit-box-pack: center;
+		    -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		    padding-top: 40px;
+		}
+		.item {
+		    font-size: 14px;
+		    width: 48%;
+		    overflow: hidden;
+		    margin: 10px;
+		    align-self: center;
+		    color: white;
+		    /* border: 1px solid white; */
+		}
+		#left {
+			
+		}
+		#left img {
+			width: 100%;
+		}
+		@media screen and (min-width: 801px) {
+    		.item {
+        		max-width: 450px;
+    		}
+    	}
+		@media screen and (max-width: 801px) {
+    		.item {
+        		width: 90%;
+        		margin: 0 auto; 
+    		}
+    		#div1_story, #div2_time, #div3_button, #div4_type, #div5_godlen {
+				margin: auto 0;		
+				text-align: center;		
+    		}
+    	}
+		#div1_story p {
+			font-style: italic;
+			font-family: "Times New Roman";
+			line-height: 7px;
+		}
+		#div2_time {
+			margin-top: 30px;
+		}
+		#div2_time p {
+			font-weight: bold;	
+			font-family: FjallaOne;
+			line-height: 12px;
+			letter-spacing: 1px;
+			margin-top: 8px;
+			margin-bottom: 8px;			
+		}
+		#div3_button {
+			margin-top: 30px;
+		}
+		#div3_button button {
+			background: #111;
+			color: #BA925A;
+			border: 2px solid #BA925A;
+			padding: 18px 40px;
+			font-family: FjallaOne;
+			font-size: 20px;
+		}
+		#div4_type div {
+			display: inline-block;
+			margin-right: 8px;
+		}
+		#div4_type {
+			margin-top: 30px;
+		}	
+		#div4_type p {
+			margin-top: 8px;
+			margin-bottom: 8px;						
+		}	
+		.coin-del {
+			color: #BA925A;
+			text-decoration: line-through;
+			font-size: 18px;
+		}
+		.coin {
+			color: #BA925A;
+			font-size: 18px;	
+			margin-top: 8px;
+			margin-bottom: 8px;			
+		}	
+		#div5_godlen {
+			margin-top: 15px;
+		}				
+		#div5_godlen div {
+			display: inline-block;
+		}
+		#time {
+			padding-top: 10px;
+			font-size: 12px;
+		}
+		#time span {
+			color: #584F46;
+		}
+		#golden p {
+			font-family: "Times New Roman";
+			line-height: 4px;
+			color: #909EA7;
+		}
+		#golden {
+			padding-left: 10px;
+		}
+		#div5_godlen_left p {
+			margin-top: 8px;
+			margin-bottom: 8px;						
+		}
+	</style>
+</head>
+<body>
+	<div id="banner">
+		
+	</div>
+	<div class="container">
+		<div id="ribbon">
+			<img src="ribbon.png" alt="">
+		</div>		
+		<div class="main-container">
+
+			<div class="item" id="left">
+				<img src="thegolden.jpg" alt="">
+			</div>
+			<div class="item" id="right">
+				<div id="div1_story">
+					<p>Stories and sounds of</p>
+					<p>California and the West from</p>
+					<p>some of our favorite musicians,</p>
+					<p>writes, filmmakers, radio</p>
+					<p>producers, and artists</p>
+				</div>
+				<div id="div2_time">
+					<p>SEPTEMBER 30, 2016</p>
+					<p>THE GREEK THEATRE</p>
+					<p>BERKELEY, CA</p>
+					<p id="time">8PM<span>-DOORS AT 7</span></p>	
+				</div>
+				<div id="div3_button">
+					<button type="">BUY TICKETS</button>
+				</div>
+				<div id="div4_type">
+					<div>
+						<p>PIT</p>
+						<p class="coin-del">$70</p>
+					</div>
+					<div>
+						<p>FLOOR</p>
+						<p class="coin"contextmenu="">$60</p>
+					</div>
+					<div>
+						<p>STANDS</p>
+						<p class="coin">$52</p>
+					</div>
+					<div>
+						<p >LAWC</p>
+						<p class="coin-del">$37</p>
+					</div>
+				</div>
+				<div id="div5_godlen">
+					<div id="div5_godlen_left">
+						<p>GOLDEN<br>TICKET</p>
+						<p class="coin">$255</p>
+					</div>
+					<div id="golden">
+						<p>Includes Pit Seats, Golden</p>
+						<p>State Record merchandise, and</p>
+						<p>backstage cocktail reception</p>
+						<p>after the show</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

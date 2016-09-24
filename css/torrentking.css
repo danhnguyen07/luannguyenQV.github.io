@@ -150,13 +150,13 @@ body {
 .lnItem:hover .lnXemchitiet {
     opacity: 0.9;
     color: white;
-    top: 160px;
-    transition: all 0.8s ease-in-out;      
+    /* top: 160px; */
+    /* transition: all 0.8s ease-in-out;       */
 }
 .lnXemchitiet {
     position: absolute;
     display: block;
-    top: 300px;
+    top: 160px;
     left: 60px;
     width: 140px;
     border: 1px solid white;
