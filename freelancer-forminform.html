@@ -1,0 +1,68 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+	<style type="text/css" media="screen">
+		@font-face { font-family: FuturaPTBook; src: url('FuturaPTBook.otf'); } 
+		input {
+			display: inline-block;
+			background-color: #F2F2F2;
+			border: none;
+			font-size: 20px;
+			font-family: FuturaPTBook;
+		}
+		input[type=text] {
+		    padding: 30px 20px;
+		    box-sizing: border-box;
+		}
+		input[type=submit] {
+		    padding: 30px 20px;
+		    box-sizing: border-box;
+		    background-color: #1A203F;	
+		    color: white;		
+		} 
+		#first_name {
+			width: 29%;
+		}
+		#email {
+			width: 39%;
+		}
+		#submit {
+			width: 29%;
+		}
+	</style>
+</head>
+<body>
+
+<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+	<input type=hidden name="oid" value="00Di0000000g7E3">
+	<input type=hidden name="retURL" value="http://www.mycotechcorp.com/your-download-is-ready.html">
+	<!--  ----------------------------------------------------------------------  -->
+	<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+	<!--  these lines if you wish to test in debug mode.                          -->
+	<!--  <input type="hidden" name="debug" value=1>                              -->
+	<!--  <input type="hidden" name="debugEmail" value="alan@mycotechcorp.com">   -->
+	<!--  ----------------------------------------------------------------------  -->
+
+
+<input  id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="Enter Name" />
+
+<input  id="email" maxlength="80" name="email" size="20" type="text" placeholder="Enter Email" />
+
+<input id="submit" type="submit" name="submit" value="GET THE FREE WHITE PAPER">
+
+</form>
+
+</body>
+</html>
