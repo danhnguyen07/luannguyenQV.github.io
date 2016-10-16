@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!-- NAV -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">WebInfoSolutions</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#myPage">HOME</a></li>
+                <li><a href="#band">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">CARS</a></li>
+                        <li><a href="#">HONDA</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown"><span id="glyphicon-comment" class="glyphicon glyphicon-comment"></span></a>
+                    <!-- Chat form -->
+                    <div class="dropdown-menu" id="popupForm">
+                        <div class="panel-heading top-bar">
+                            <div class="col-md-8 col-xs-8">
+                                <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> luan nguyen</h3>
+                            </div>
+                        </div>
+                        <div class="panel-body msg_container_base">
+                            <div class="row msg_container base_sent">
+                                <div class="col-md-10 col-xs-10">
+                                    <div class="messages msg_sent">
+                                        <p>How are you?</p>
+                                        <time datetime="2009-11-13T20:00">WebSoft • 20 min</time>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-xs-2 avatar">
+                                    <img src="https://cdn5.f-cdn.com/ppic/47322226/logo/13323818/EMG3p/profile_logo_.jpg" class=" img-responsive ">
+                                </div>
+                            </div>
+                            <div class="row msg_container base_receive">
+                                <div class="col-md-2 col-xs-2 avatar">
+                                    <img src="https://cdn2.f-cdn.com/ppic/33386568/logo/13559306/alI3z/profile_logo_.jpg" class=" img-responsive ">
+                                </div>
+                                <div class="col-md-10 col-xs-10">
+                                    <div class="messages msg_receive">
+                                        <p>I'm fine, thank you, and you.</p>
+                                        <time datetime="2009-11-13T20:00">luannguyen • 19 min</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row msg_container base_sent">
+                                <div class="col-md-10 col-xs-10">
+                                    <div class="messages msg_sent">
+                                        <p>I'm OK</p>
+                                        <time datetime="2009-11-13T20:00">WebSoft • 20 min</time>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-xs-2 avatar">
+                                    <img src="https://cdn5.f-cdn.com/ppic/47322226/logo/13323818/EMG3p/profile_logo_.jpg" class=" img-responsive ">
+                                </div>
+                            </div>
+                            <div class="row msg_container base_receive">
+                                <div class="col-md-2 col-xs-2 avatar">
+                                    <img src="https://cdn2.f-cdn.com/ppic/33386568/logo/13559306/alI3z/profile_logo_.jpg" class=" img-responsive ">
+                                </div>
+                                <div class="col-xs-10 col-md-10">
+                                    <div class="messages msg_receive">
+                                        <p>Good</p>
+                                        <time datetime="2009-11-13T20:00">WebSoft • 18 min</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row msg_container base_sent">
+                                <div class="col-xs-10 col-md-10">
+                                    <div class="messages msg_sent">
+                                        <p>Funny to work with you</p>
+                                        <time datetime="2009-11-13T20:00">luannguyen • 17 min</time>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-xs-2 avatar">
+                                    <img src="https://cdn5.f-cdn.com/ppic/47322226/logo/13323818/EMG3p/profile_logo_.jpg" class=" img-responsive ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div><!-- Chat form -->
+                </li>
+            </ul><!-- RIGH MENU -->
+        </div>
+  </div>
+</nav><!-- END NAV -->
+<!-- CONTAIN -->
+<div id="contain" class="container">
+    <div class="row">
+        <div class="col-md-2 col-md-offset-2 col-sm-4 col-xs-12">
+            <div class="profileImg">
+                <img class="img-responsive" src="https://cdn2.f-cdn.com/ppic/33386568/logo/13559306/alI3z/profile_logo_.jpg" alt="">
+            </div>
+            <div class="profileName">
+                <h4>WebInfoSolutions</h4>
+            </div>
+            <div class="profileSocial">
+                <span><i class="fa fa-facebook-square"></i></span>
+                <span><i class="fa fa-youtube-square"></i></span>
+                <span><i class="fa fa-twitter-square"></i></span>
+            </div>
+            <div class="profileSmall">
+                <span>Joined from 2016</span>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-8 col-xs-12">
+            <div>
+                <h4>WebInfoSolutions</h4>
+                <h5>Web Developer</h5>
+                <p>
+                    1. Laravel 5:3:15
+                    <br> 2. CodeIgniter 3
+                    <br> 3. ASP:NET MVC Razor, Entity Frameowork(Code First)/ADO:NET
+                    <br> 4. Web API for Android and IOS
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row" style="padding: 20px 0;">
+            <div class="col-md-12 text-center">
+                <h4>WebInfoSolutions</h4>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+</body>
+
+</html>
