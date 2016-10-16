@@ -1,0 +1,38 @@
+label {
+    font-weight: normal;
+}
+
+.navbar-default {
+    border-radius: 0px;
+}
+
+#contain {
+    min-height: 500px;
+}
+.centerForm {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.login {
+    border: 1px solid #ccc;
+    padding:  30px;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 0px;
+    background-color: white;
+    display: inline-block;
+}
+
+.lbCheckbox {
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+.btnLogin {
+    width: 100%;
+}
