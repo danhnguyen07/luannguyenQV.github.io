@@ -5,12 +5,20 @@
 	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
   	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css">
+    <script type="text/javascript" src="http://oss.maxcdn.com/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+   	<style type="text/css">
+	    #login-form .form-control-feedback {
+	        right: 15px;
+	    }
+	    #login-form .selectContainer .form-control-feedback {
+	        right: 25px;
+	    }
+    </style>
 </head>
 <body>
 
@@ -125,17 +133,21 @@
 <div id="contain" class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<form class="centerForm login" method="get" accept-charset="utf-8">
+			<form id="login-form" class="centerForm login" method="get" accept-charset="utf-8">
 				<div class="title">
 					<h4>LOGIN</h4>
 				</div>
 				<div class="form-group">
-					<label>Email</label>
-					<input class="form-control" type="mail" name="" value="" placeholder="email@example.com">
+					<div class="row">
+						<div class="col-xs-12">
+							<label>Email</label>
+							<input class="form-control" type="mail" name="mail" value="" placeholder="email@example.com">
+						</div>
+					</div>
 				</div>
 				<div class="form-group">
 					<label>Password</label>
-					<input class="form-control" type="password" name="" value="" placeholder="******">
+					<input class="form-control" type="password" name="password" value="" placeholder="******">
 				</div>
 				<div class="form-group">
 					<input class="checkbox" id="checkbox" type="checkbox">
@@ -168,6 +180,35 @@
 
 <!-- END FOOTER -->
 <script type="text/javascript">
+$(document).ready(function() {
+    $('#login-form').bootstrapValidator({
+        feedbackIcons: {
+        },
+        fields: {
+            mail: {
+                group: '.col-xs-12',
+                validators: {
+                    notEmpty: {
+                        message: 'Email is required'
+                    },
+                    regexp: {
+                        regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
+                        message: 'Please enter email address'
+                    }
+                }
+            },
+            password: {
+                group: '.col-sm-4',
+                validators: {
+                    notEmpty: {
+                        message: 'Password is required'
+                    }
+                }
+            }
+        }
+    });
+});
 </script>
+
 </body>
 </html>
