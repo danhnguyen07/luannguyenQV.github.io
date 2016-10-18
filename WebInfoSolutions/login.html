@@ -11,14 +11,6 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrapValidator.min.css">
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
-   	<style type="text/css">
-	    #login-form .form-control-feedback {
-	        right: 15px;
-	    }
-	    #login-form .selectContainer .form-control-feedback {
-	        right: 25px;
-	    }
-    </style>
 </head>
 <body>
 
@@ -48,82 +40,52 @@
         		</li>
       		</ul>
       		<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown"><span id="glyphicon-comment" class="glyphicon glyphicon-comment"></span></a>
-					<!-- Chat form -->
-	    			<div class="dropdown-menu" id="popupForm">
-	                    <div class="panel-heading top-bar">
-	                        <div class="col-md-8 col-xs-8">
-	                            <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> luan nguyen</h3>
-	                        </div>
-	                    </div>
-	        			<div class="panel-body msg_container_base">
-			                <div class="row msg_container base_sent">
-			                    <div class="col-md-10 col-xs-10">
-			                        <div class="messages msg_sent">
-			                            <p>How are you?</p>
-			                            <time datetime="2009-11-13T20:00">WebSoft • 20 min</time>
-			                        </div>
-			                    </div>
-			                    <div class="col-md-2 col-xs-2 avatar">
-			                        <img src="https://cdn5.f-cdn.com/ppic/47322226/logo/13323818/EMG3p/profile_logo_.jpg" class=" img-responsive ">
-			                    </div>
-			                </div>
-			                <div class="row msg_container base_receive">
-			                    <div class="col-md-2 col-xs-2 avatar">
-			                        <img src="https://cdn2.f-cdn.com/ppic/33386568/logo/13559306/alI3z/profile_logo_.jpg" class=" img-responsive ">
-			                    </div>
-			                    <div class="col-md-10 col-xs-10">
-			                        <div class="messages msg_receive">
-			                            <p>I'm fine, thank you, and you.</p>
-			                            <time datetime="2009-11-13T20:00">luannguyen • 19 min</time>
-			                        </div>
-			                    </div>
-			                </div>
-			                <div class="row msg_container base_sent">
-			                    <div class="col-md-10 col-xs-10">
-			                        <div class="messages msg_sent">
-			                            <p>I'm OK</p>
-			                            <time datetime="2009-11-13T20:00">WebSoft • 20 min</time>
-			                        </div>
-			                    </div>
-			                    <div class="col-md-2 col-xs-2 avatar">
-			                        <img src="https://cdn5.f-cdn.com/ppic/47322226/logo/13323818/EMG3p/profile_logo_.jpg" class=" img-responsive ">
-			                    </div>
-			                </div>
-			                <div class="row msg_container base_receive">
-			                    <div class="col-md-2 col-xs-2 avatar">
-			                        <img src="https://cdn2.f-cdn.com/ppic/33386568/logo/13559306/alI3z/profile_logo_.jpg" class=" img-responsive ">
-			                    </div>
-			                    <div class="col-xs-10 col-md-10">
-			                        <div class="messages msg_receive">
-			                            <p>Good</p>
-			                            <time datetime="2009-11-13T20:00">WebSoft • 18 min</time>
-			                        </div>
-			                    </div>
-			                </div>
-			                <div class="row msg_container base_sent">
-			                    <div class="col-xs-10 col-md-10">
-			                        <div class="messages msg_sent">
-			                            <p>Funny to work with you</p>
-			                            <time datetime="2009-11-13T20:00">luannguyen • 17 min</time>
-			                        </div>
-			                    </div>
-			                    <div class="col-md-2 col-xs-2 avatar">
-			                        <img src="https://cdn5.f-cdn.com/ppic/47322226/logo/13323818/EMG3p/profile_logo_.jpg" class=" img-responsive ">
-			                    </div>
-			                </div>
-	            		</div>
-	                    <div class="panel-footer">
-	                        <div class="input-group">
-	                            <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here...">
-	                            <span class="input-group-btn">
-	                                <button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
-	                            </span>
-	                        </div>
-	                    </div>
-		    		</div><!-- Chat form -->
-    			</li>
+                <li class="dropdown">
+                	<a class="dropdown-toggle" href="#" data-toggle="dropdown">MESSAGES <strong class="caret"></strong></a>
+					<div id="mgs" class="dropdown-menu" style="background-color: #ccc;border-radius: 5px; width: 250px; padding-bottom: 10px;">
+						<ul>
+							<li style="background-color: #ccc; height: 30px;">
+								<div class="col-xs-12">
+									<span style="line-height: 30px;">MESSAGES</span>
+								</div>
+							</li>
+							<li style="background-color: white;">
+								<a href="javascript:register_popup('webinfo', 'WebInfoSolutions');" title="">
+									<div class="row">
+										<div class="col-xs-4">
+											<img src="https://cdn2.f-cdn.com/ppic/33386568/logo/13559306/alI3z/profile_logo_.jpg" class="img-responsive" alt="">
+										</div>
+										<div class="col-xs-8">
+											<div>
+												<strong>Web</strong>
+											</div>
+											<div>
+												How are you?
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li style="background-color: white;">
+								<a href="javascript:register_popup('luan', 'Luan');" title="">
+									<div class="row">
+										<div class="col-xs-4">
+											<img src="https://cdn2.f-cdn.com/ppic/33386568/logo/13559306/alI3z/profile_logo_.jpg" class="img-responsive" alt="">
+										</div>
+										<div class="col-xs-8">
+											<div>
+												<strong>Luan</strong>
+											</div>
+											<div>
+												How about your work?
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>				
+					</div>                	
+                </li>
      		</ul><!-- RIGH MENU -->
     	</div>
   </div>
@@ -146,8 +108,12 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label>Password</label>
-					<input class="form-control" type="password" name="password" value="" placeholder="******">
+					<div class="row">
+						<div class="col-xs-12">
+							<label>Password</label>
+							<input class="form-control" type="password" name="password" value="" placeholder="******">
+						</div>
+					</div>
 				</div>
 				<div class="form-group">
 					<input class="checkbox" id="checkbox" type="checkbox">
@@ -180,6 +146,114 @@
 
 <!-- END FOOTER -->
 <script type="text/javascript">
+
+Array.remove = function(array, from, to) {
+    var rest = array.slice((to || from) + 1 || array.length);
+    array.length = from < 0 ? array.length + from : from;
+    return array.push.apply(array, rest);
+};
+    
+//this variable represents the total number of popups can be displayed according to the viewport width
+var total_popups = 0;
+        
+//arrays of popups ids
+var popups = [];
+    
+//this is used to close a popup
+function close_popup(id)
+{
+    for(var iii = 0; iii < popups.length; iii++)
+    {
+        if(id == popups[iii])
+        {
+            Array.remove(popups, iii);
+            
+            document.getElementById(id).style.display = "none";
+            
+            calculate_popups();
+            
+            return;
+        }
+    }   
+}
+
+//displays the popups. Displays based on the maximum number of popups that can be displayed on the current viewport width
+function display_popups()
+{
+	console.log("display popup");
+    var right = 120;
+    
+    var iii = 0;
+    for(iii; iii < total_popups; iii++)
+    {
+        if(popups[iii] != undefined)
+        {
+            var element = document.getElementById(popups[iii]);
+            element.style.right = right + "px";
+            right = right + 320;
+            element.style.display = "block";
+        }
+    }
+    
+    for(var jjj = iii; jjj < popups.length; jjj++)
+    {
+        var element = document.getElementById(popups[jjj]);
+        element.style.display = "none";
+    }
+}
+
+//creates markup for a new popup. Adds the id to popups array.
+function register_popup(id, name)
+{
+    
+    for(var iii = 0; iii < popups.length; iii++)
+    {   
+        //already registered. Bring it to front.
+        if(id == popups[iii])
+        {
+            Array.remove(popups, iii);
+        
+            popups.unshift(id);
+            
+            calculate_popups();
+            
+            
+            return;
+        }
+    }               
+    
+    var element = '<div class="popupForm" id="' + id + '"><div class="panel-heading top-bar"><div class="col-md-8 col-xs-8"><h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> ' + name + '</h3></div><div class="col-md-4 col-xs-4" style="text-align: right;"><a href="javascript:close_popup(\'' + id + '\');"><span class="glyphicon glyphicon-remove icon_close" data-id="chat_window_1"></span></a></div></div><div class="panel-body msg_container_base"><div class="row msg_container base_sent"><div class="col-md-10 col-xs-10"><div class="messages msg_sent"><p>How are you?</p><time datetime="2009-11-13T20:00">WebSoft • 20 min</time></div></div><div class="col-md-2 col-xs-2 avatar"><img src="https://cdn5.f-cdn.com/ppic/47322226/logo/13323818/EMG3p/profile_logo_.jpg" class=" img-responsive "></div></div><div class="row msg_container base_receive"><div class="col-md-2 col-xs-2 avatar"><img src="https://cdn2.f-cdn.com/ppic/33386568/logo/13559306/alI3z/profile_logo_.jpg" class=" img-responsive "></div><div class="col-md-10 col-xs-10"><div class="messages msg_receive"><p>Im fine, thank you, and you.</p><time datetime="2009-11-13T20:00">luannguyen • 19 min</time></div></div></div><div class="row msg_container base_sent"><div class="col-md-10 col-xs-10"><div class="messages msg_sent"><p>Im OK</p><time datetime="2009-11-13T20:00">WebSoft • 20 min</time></div></div><div class="col-md-2 col-xs-2 avatar"><img src="https://cdn5.f-cdn.com/ppic/47322226/logo/13323818/EMG3p/profile_logo_.jpg" class=" img-responsive "></div></div><div class="row msg_container base_receive"><div class="col-md-2 col-xs-2 avatar"><img src="https://cdn2.f-cdn.com/ppic/33386568/logo/13559306/alI3z/profile_logo_.jpg" class=" img-responsive "></div><div class="col-xs-10 col-md-10"><div class="messages msg_receive"><p>Good</p><time datetime="2009-11-13T20:00">WebSoft • 18 min</time></div></div></div><div class="row msg_container base_sent"><div class="col-xs-10 col-md-10"><div class="messages msg_sent"><p>Funny to work with you</p><time datetime="2009-11-13T20:00">luannguyen • 17 min</time></div></div><div class="col-md-2 col-xs-2 avatar"><img src="https://cdn5.f-cdn.com/ppic/47322226/logo/13323818/EMG3p/profile_logo_.jpg" class=" img-responsive "></div></div></div><div class="panel-footer"><div class="input-group"><input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..."><span class="input-group-btn"><button class="btn btn-primary btn-sm" id="btn-chat">Send</button></span></div></div></div>';
+    
+    document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML + element;  
+
+    popups.unshift(id);
+            
+    calculate_popups();
+}
+        
+//calculate the total number of popups suitable and then populate the toatal_popups variable.
+function calculate_popups()
+{
+    var width = window.innerWidth;
+    if(width < 540)
+    {
+        total_popups = 0;
+    }
+    else
+    {
+        width = width - 200;
+        //320 is width of a single popup box
+        total_popups = parseInt(width/320);
+    }
+    
+    display_popups();
+    
+}
+        
+//recalculate when window is loaded and also when window is resized.
+window.addEventListener("resize", calculate_popups);
+window.addEventListener("load", calculate_popups);
+
 $(document).ready(function() {
     $('#login-form').bootstrapValidator({
         feedbackIcons: {
@@ -198,7 +272,7 @@ $(document).ready(function() {
                 }
             },
             password: {
-                group: '.col-sm-4',
+                group: '.col-xs-12',
                 validators: {
                     notEmpty: {
                         message: 'Password is required'
